@@ -1,0 +1,12 @@
+<h1>Articles#index</h1>
+<p>Find me in app/views/articles/index.html.erb</p>
+
+<% @articles.each do |article| %>
+  Tilte: <%= article.title %>
+  <br/>
+  Description: <%= article.description %>
+  <br/>
+  <%= link_to 'show', article_path(article)%>
+  <br/>
+  <br/>
+<% end %>
